@@ -13,7 +13,7 @@
         <img src="images/icons/logo.svg" width="140" height="70" alt="Логотип Седоны" class="logo-site">
       </a>
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-menu">
           <li class="navigation-item">
             <a href="index.html" class="navigation-link" aria-current="page">
               Главная
@@ -33,18 +33,18 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a href="#" class="navigation-link">
-              <span class="visuality-hidden">Поиск</span>
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">
-              <span class="visuality-hidden">
+              <span class="visually-hidden">
                 Избранное
               </span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link link-button">
+          <li class="navigation-item ">
+            <a href="#" class="navigation-link button background-brown button-mini">
               Хочу сюда!
             </a>
           </li>
@@ -57,11 +57,12 @@
     <main class="main-index" data-test="main">
 
       <section class="promo" data-test="hero">
-        <h1 class="visuality-hidden">
+        <h1 class="visually-hidden">
           Добро пожаловать в Седону
         </h1>
         <img src="images/welcome.svg" alt="Welcome to the Gorgeous Sedona Becose the Grand Canyon sucks" width="458"
           height="352">
+
       </section>
 
       <section class="advantages" data-test="advantages">
@@ -115,12 +116,15 @@
       </section>
 
       <section class="recomendation">
-        <h2>
+        <div class="recomendation-header">
+          <h2>
           Приезжайте в Седону отдохнуть в комфорте и уюте!
         </h2>
         <p>
           Опытный персонал и качественное обслуживание!
         </p>
+        </div>
+
         <ul class="recomendation-list">
           <li class="recomendation-item">
             <h3>Жилье</h3>
@@ -143,24 +147,26 @@
       <section class="offer" data-test="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#" class="button">ПОИСК ГОСТИНИЦЫ В седоне</a>
+        <a href="#" class="button background-brown">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
-    </main>
+
 
     <section class="subscribe" data-test="subscribe">
       <h2 class="subcribe-title">
         Подпишитесь на рассылку
       </h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="subsctibe-form" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="email" name="email" placeholder="Ваш e-mail" required>
-        <button type="submit">Подписаться</button>
+        <button class="button subscribe-button" type="submit">Подписаться</button>
       </form>
     </section>
 
+    </main>
+
    <footer class="page-footer" data-test="footer">
       <section class="footer-social">
-        <h3 class="visuality-hidden">Ссылки на соцсети</h3>
+        <h3 class="visually-hidden">Ссылки на соцсети</h3>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a href="#">
