@@ -80,12 +80,11 @@ body {
 
 .promo {
   background-color: #82B3D3;
-  background-image: url("../images/index-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../images/index-background.jpg"), url("../images/divider.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, 1200px 57px;
   text-align: center;
-  background-position: 0 0;
-
+  background-position: 0 0, bottom center;
 }
 
 .background-lightblue {
@@ -159,8 +158,8 @@ h3 {
 
 .recomendation-item {
   text-align: center;
-
 }
+
 
 .offer {
   padding: 96px 304px;
@@ -179,6 +178,7 @@ h3 {
   padding: 96px 258px 104px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 0;
 }
 
 .subscribe-form input {
