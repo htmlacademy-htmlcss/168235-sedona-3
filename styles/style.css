@@ -56,6 +56,7 @@ body {
 }
 
 .button {
+  font-family: inherit;
   font-size: 20px;
   font-weight: 700;
   line-height: 125%;
@@ -80,11 +81,11 @@ body {
 
 .promo {
   background-color: #82B3D3;
-  background-image: url("../images/index-background.jpg"), url("../images/divider.svg");
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: cover, 1200px 57px;
+  background-size: 100% auto, cover;
   text-align: center;
-  background-position: 0 0, bottom center;
+  background-position: bottom center, center center;
 }
 
 .background-lightblue {
@@ -120,6 +121,19 @@ h2 {
 .advantages-item {
   padding: 103px 85px;
 }
+
+.small-hr {
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  margin: 30px auto;
+}
+
+.small-dark-hr {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 
 h3 {
   font-weight: 700;
@@ -171,22 +185,33 @@ h3 {
 }
 
 .subscribe {
-  background-color: #82B3D3;
   text-align: center;
+  color: #333333;
+  padding: 96px 258px 104px;
+}
+
+.subscribe-index {
+  background-color: #82B3D3;
   color: #ffffff;
   background-image: url(../images/Subscribe.jpg);
-  padding: 96px 258px 104px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 0;
+  background-position: center center;
+}
+
+
+.subscribe-title {
+  color: #000000;
+}
+
+.subscribe-index .subscribe-title {
+  color: #ffffff;
 }
 
 .subscribe-form input {
   border: 0;
 }
-.subscribe h2 {
-  color: #ffffff;
-}
+
 
 .subscribe-form input {
   border-radius: 4px 0 0 4px;
@@ -243,6 +268,7 @@ h1.catalog-title {
   background-size: cover;
   color: #ffffff;
   padding: 35px 70px 70px;
+  background-position: center center;
 }
 
 .page-catalog a,
@@ -281,6 +307,7 @@ h1.catalog-title {
 }
 
 .button-mini {
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 125%;
@@ -294,7 +321,8 @@ h1.catalog-title {
 }
 
 .catalog-filter-price {
-  padding: 4px 0 0 4px;
+  font-family: inherit;
+  border-radius: 4px 0 0 4px;
   padding: 12px 20px;
   font-size: 18px;
   font-weight: 700;
@@ -313,6 +341,7 @@ h1.catalog-title {
 .catalog {
   padding: 50px 70px 60px;
 }
+
 .catalog ul,
 .catalog-list,
 .pagination {
@@ -320,12 +349,16 @@ h1.catalog-title {
 }
 
 .select-control {
+  font-family: inherit ;
   font-size: 18px;
   font-style: 400;
   line-height: 117%;
   color: #333333;
   border-radius: 4px;
-  border: 2px solid ;
+  border: 2px solid #E5E5E5;
+  padding: 14px 20px;
+  width: 292px;
+
 }
 
 .catalog-card {
@@ -341,6 +374,7 @@ h1.catalog-title {
 .pagination a {
   text-decoration: none;
 }
+
 .display-list a,
 .catalog-card-link {
   color: #000000;
