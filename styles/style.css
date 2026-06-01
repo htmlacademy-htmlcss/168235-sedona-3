@@ -47,6 +47,7 @@ body {
 
 .navigation-link {
   font-size: 20px;
+  font-weight: 700;
   line-height: 120%;
   color: #000000;
   text-decoration: none;
@@ -198,6 +199,9 @@ h3 {
   background-size: cover;
   background-position: center center;
 }
+.subscribe-index input {
+  background-color: #f2f2f2;
+}
 
 
 .subscribe-title {
@@ -208,15 +212,17 @@ h3 {
   color: #ffffff;
 }
 
-.subscribe-form input {
-  border: 0;
-}
-
 
 .subscribe-form input {
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
+  border: 0;
   width: 452px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: #000000;
 }
 
 .subscribe-button {
@@ -351,7 +357,7 @@ h1.catalog-title {
 .select-control {
   font-family: inherit ;
   font-size: 18px;
-  font-style: 400;
+  font-size: 400;
   line-height: 117%;
   color: #333333;
   border-radius: 4px;
@@ -406,20 +412,38 @@ h1.catalog-title {
   border-radius: 4px;
   padding: 10px;
 }
+.pagination {
+  display: flex;
+  gap: 8px;
+}
 
+.pagination-item {
+
+}
 
 .pagination-link {
   background-color: #82b3d3;
-  padding: 10px;
+
   color: #ffffff;
   border-radius: 4px;
-  margin: 2px;
-  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 180%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center;
+
+
 
 }
 
 .pagination-current {
   color: #000000;
+  background-color: #F2F2F2;
 }
 
 .in-favorites {
@@ -428,4 +452,5 @@ h1.catalog-title {
 
 .pagination-more {
   color: #000000;
+  background-color: #fff;
 }
