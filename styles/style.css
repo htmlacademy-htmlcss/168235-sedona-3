@@ -14,14 +14,23 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
 body {
+  margin: 0;
   min-width: 1240px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 117%;
   color: #333333;
   background-color: #ffffff;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .page-container {
@@ -34,6 +43,21 @@ body {
   background-color: #ffffff;
 }
 
+.main-index {
+  max-width: 1200px;
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 .page-wrapper {
   width: 1060px;
   margin: 0 auto;
@@ -43,13 +67,13 @@ body {
   display: flex;
   padding: 0;
   gap: 30px;
-  height: 64px;
-  flex-grow: 1;
   margin: 0 70px;
 }
 
 .logo-link {
+  display: block;
   z-index: 0;
+  margin-bottom: -10px;
 }
 
 
@@ -117,11 +141,6 @@ body {
   background-color: #756157;
 }
 
-.main-index {
-  max-width: 1200px;
-}
-
-
 .promo {
   background-color: #82B3D3;
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
@@ -130,6 +149,40 @@ body {
   text-align: center;
   background-position: bottom center, center center;
 }
+
+.promo-headline,
+.recomendation-headline,
+.offer-headline {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.headline-item {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+  text-transform: uppercase;
+  text-align: center;
+  color:#000000;
+}
+
+.promo-text,
+.recomendation-text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 118%;
+  text-align: center;
+  color: #333;
+}
+
+
 
 .background-lightblue {
   background-color: #82B3D3;
@@ -140,12 +193,23 @@ body {
   text-align: center;
 }
 
-h2 {
+.subscribe-title {
+  max-width: 445px;
   font-weight: 700;
   font-size: 30px;
   line-height: 120%;
   text-transform: uppercase;
   text-align: center;
+  color: #000000;
+}
+
+.sorting-title {
+
+  max-width: 445px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -213,7 +277,7 @@ h2 {
 }
 
 
-h3 {
+.advatages-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
@@ -243,6 +307,7 @@ h3 {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .recomendation-header {
@@ -298,12 +363,6 @@ h3 {
   background-color: #f2f2f2;
 }
 
-
-.subscribe-title {
-  max-width: 445px;
-  color: #000000;
-}
-
 .subscribe-index .subscribe-title {
   color: #ffffff;
 }
@@ -335,15 +394,7 @@ h3 {
   max-width: 445px;
 }
 
-.phone {
-  font-size: 40px;
-  line-height: 100%;
-  text-transform: uppercase;
-  text-align: center;
-  color: #000000;
-  text-decoration: none;
-  font-style: normal;
-}
+
 
 .page-footer {
   display: flex;
@@ -379,7 +430,22 @@ h3 {
   width: 47px;
   height: 40px;
   align-items: center;
+}
 
+.address {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.phone {
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  font-style: normal;
 }
 
 .copyright-link {
@@ -399,8 +465,9 @@ h3 {
   overflow: hidden;
 }
 
-/* Страница каталога */
-h1.catalog-title {
+    /* Страница каталога */
+
+.catalog-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 130%;
@@ -437,13 +504,8 @@ h1.catalog-title {
   box-sizing: border-box;
   flex-basis: 160px;
   height: 48px;
+  gap: 8px;
 }
-
-.display-item:nth-child(1) {
-  background-image: url(../images/icons/icon-view-table.svg);
-  background-repeat: no-repeat ;
-}
-
 
 .filter-checkbox {
   width: 150px;
@@ -544,12 +606,13 @@ h1.catalog-title {
   padding: 0;
 }
 
+.filter-section {
+  display: block;
+}
+
 .filter-form {
   display: flex;
   box-sizing: border-box;
-  flex-grow: 1;
-  height: 160px;
-
 }
 
 .filter-title {
@@ -560,10 +623,7 @@ h1.catalog-title {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 288px;
-
 }
-
-
 
 .button-transparent {
   background-color: transparent;
@@ -585,17 +645,13 @@ h1.catalog-title {
 }
 
 
-
-
-.sorting-title h2 {
+.sorting-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 120%;
   text-transform: uppercase;
   color: #000000;
 }
-
-
 
 .select-control {
   font-family: inherit;
@@ -607,18 +663,14 @@ h1.catalog-title {
   border: 2px solid #E5E5E5;
   padding: 14px 20px;
   flex-basis: 292px;
-  box-sizing: border-box;
-
 }
 
 .catalog-view {
   display: flex;
   flex-grow: 1;
-  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-
-
+  padding: 0 70px;
 }
 
 .catalog-list {
@@ -629,6 +681,37 @@ h1.catalog-title {
   gap: 20px;
 }
 
+.display-button {
+  width: 48px;
+  height: 48px;
+  display: block;
+  border: 2px solid #e5e5e5;
+}
+
+.view-current {
+  border: 2px solid black;
+}
+
+.view-table {
+  background-image: url(../images/icons/icon-view-table.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.view-item {
+  background-image: url(../images/icons/icon-view-item.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.view-list {
+   background-image: url(../images/icons/icon-view-list.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
 
 .card {
   border: 1px solid #e5e5e5;
@@ -637,7 +720,9 @@ h1.catalog-title {
   width: 340px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px 16px;
 
 }
 
@@ -672,6 +757,7 @@ h1.catalog-title {
   font-weight: 700;
   line-height: 117%;
   color: #000000;
+  margin: 16px 0 0;
 }
 
 .card-type,
@@ -698,13 +784,11 @@ h1.catalog-title {
   display: flex;
   gap: 8px;
   margin-bottom: 60px;
+  flex-wrap: wrap;
 }
-
-.pagination-item {}
 
 .pagination-link {
   background-color: #82b3d3;
-
   color: #ffffff;
   border-radius: 4px;
   margin: 0;
@@ -716,11 +800,7 @@ h1.catalog-title {
   height: 60px;
   display: flex;
   justify-content: center;
-  /* по горизонтали */
   align-items: center;
-
-
-
 }
 
 .pagination-current {
