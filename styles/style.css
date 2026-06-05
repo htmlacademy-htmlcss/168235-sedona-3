@@ -148,6 +148,17 @@ p {
   background-size: 100% auto, cover;
   text-align: center;
   background-position: bottom center, center center;
+  width: 1200px;
+  height: 485px;
+  vertical-align: middle;
+  padding-top: 51px;
+}
+
+
+
+.promo-image {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .promo-headline,
@@ -160,6 +171,7 @@ p {
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  margin-bottom: 25px;
 }
 
 .headline-item {
@@ -180,6 +192,7 @@ p {
   line-height: 118%;
   text-align: center;
   color: #333;
+  margin-bottom: 54px;
 }
 
 
@@ -201,6 +214,7 @@ p {
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  margin-bottom: 20px;
 }
 
 .sorting-title {
