@@ -48,14 +48,6 @@ body {
   flex-grow: 1;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}
-
 .page-wrapper {
   width: 1060px;
   margin: 0 auto;
