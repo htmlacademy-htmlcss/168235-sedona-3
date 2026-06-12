@@ -56,8 +56,6 @@ p {
   padding: 0;
 }
 
-
-
 .page-wrapper {
   width: 1060px;
   margin: 0 auto;
@@ -77,7 +75,6 @@ p {
 }
 
 
-
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -88,7 +85,7 @@ p {
 
 .navigation-list {
   margin: 0;
-  padding: 0;
+
 }
 
 .navigation-menu {
@@ -523,6 +520,7 @@ p {
 }
 
 .filter-checkbox {
+  border: none;
   width: 150px;
   box-sizing: border-box;
   margin: 0;
@@ -532,6 +530,7 @@ p {
 }
 
 .filter-radio {
+  border: none;
   width: 150px;
   box-sizing: border-box;
   margin: 0;
@@ -541,6 +540,7 @@ p {
 }
 
 .filter-price {
+  border: none;
   flex-basis: 288px;
   margin: 0;
   margin-left: auto;
@@ -580,6 +580,7 @@ p {
 }
 
 .filter-buttons {
+  border: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -638,6 +639,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 288px;
+  padding: 0;
 }
 
 .button-transparent {
@@ -696,9 +698,9 @@ p {
   gap: 20px;
 }
 
-.display-button {
-  width: 48px;
-  height: 48px;
+.display-link {
+  min-width: 48px;
+  min-height: 48px;
   display: block;
   border: 2px solid #e5e5e5;
 }
@@ -727,6 +729,7 @@ p {
   background-position: center;
   background-size: 16px 14px;
 }
+
 
 .card {
   border: 1px solid #e5e5e5;
