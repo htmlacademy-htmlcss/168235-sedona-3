@@ -154,6 +154,8 @@ body {
 .promo-headline,
 .recomendation-headline,
 .offer-headline {
+  margin: 0;
+  padding: 0;
   font-family: inherit;
   font-weight: 700;
   font-size: 30px;
@@ -164,18 +166,44 @@ body {
   margin-bottom: 25px;
 }
 
+.text-white {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 117%;
+  text-align: center;
+  color: #fff;
+}
+
+.text-item {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 117%;
+  text-align: center;
+  color: #333;
+}
+
 .headline-item {
+  margin: 0;
+  padding: 0;
   font-family: inherit;
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
   text-transform: uppercase;
   text-align: center;
-  color:#000000;
+  color: #000000;
 }
 
 .promo-text,
 .recomendation-text {
+  margin: 0;
+  padding: 0;
   font-family: inherit;
   font-weight: 400;
   font-size: 22px;
@@ -197,6 +225,9 @@ body {
 }
 
 .subscribe-title {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
   max-width: 445px;
   font-weight: 700;
   font-size: 30px;
@@ -208,7 +239,9 @@ body {
 }
 
 .sorting-title {
-
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
   max-width: 445px;
   font-weight: 700;
   font-size: 30px;
@@ -282,6 +315,9 @@ body {
 
 
 .advatages-title {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
@@ -394,6 +430,14 @@ body {
 }
 
 .subscribe-text {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 118%;
+  text-align: center;
+  color: #ffffff;
   margin-bottom: 54px;
   max-width: 445px;
 }
@@ -469,7 +513,7 @@ body {
   overflow: hidden;
 }
 
-    /* Страница каталога */
+/* Страница каталога */
 
 .catalog-title {
   font-size: 60px;
@@ -716,7 +760,7 @@ body {
 }
 
 .view-list {
-   background-image: url(../images/icons/icon-view-list.svg);
+  background-image: url(../images/icons/icon-view-list.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
@@ -763,6 +807,9 @@ body {
 }
 
 .card-title {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
   font-size: 24px;
   font-weight: 700;
   line-height: 117%;
@@ -772,6 +819,9 @@ body {
 
 .card-type,
 .card-price {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   line-height: 117%;
