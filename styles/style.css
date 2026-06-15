@@ -14,8 +14,16 @@
   font-display: swap;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 html {
@@ -225,7 +233,8 @@ body {
 }
 
 .subscribe-title {
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
   padding: 0;
   font-family: inherit;
   max-width: 445px;
@@ -235,7 +244,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #000000;
-  margin-bottom: 20px;
 }
 
 .sorting-title {
@@ -381,14 +389,12 @@ body {
 }
 
 .subscribe {
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
   text-align: center;
   color: #333333;
   padding: 96px 258px 104px;
 }
+
 
 .subscribe-index {
   background-color: #756157;
@@ -397,6 +403,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.subscribe-text-index {
+  margin: 0 auto;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 118%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 54px;
+  max-width: 445px;
 }
 
 .subscribe-index input {
@@ -430,19 +449,17 @@ body {
 }
 
 .subscribe-text {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: inherit;
   font-weight: 400;
   font-size: 22px;
   line-height: 118%;
   text-align: center;
-  color: #ffffff;
+  color: #333333;
   margin-bottom: 54px;
   max-width: 445px;
 }
-
-
 
 .page-footer {
   display: flex;
