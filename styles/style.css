@@ -806,6 +806,11 @@ body {
   object-fit: contain;
 }
 
+.title-link {
+  text-decoration: none;
+  grid-column: 1 / 3;
+}
+
 .card-button {
   font-family: inherit;
   width: 140px;
@@ -833,8 +838,8 @@ body {
 }
 
 .card-link {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   grid-column: 1 / -1;
   grid-row: 1 / 2;
 }
@@ -847,7 +852,7 @@ body {
   font-weight: 700;
   line-height: 117%;
   color: #000000;
-  margin: 16px 0 0;
+
 }
 
 .card-type,
