@@ -863,6 +863,7 @@ body {
 
 .card-price {
   justify-self: flex-end;
+
 }
 
 
@@ -877,7 +878,7 @@ body {
   border-radius: 4px;
   padding: 10px;
   grid-column: 2 / 3;
-  justify-self: flex-end;
+  justify-self: stretch;
 }
 
 .pagination {
