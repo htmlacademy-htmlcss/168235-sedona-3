@@ -118,6 +118,41 @@ body {
   text-transform: capitalize;
 }
 
+.search-link {
+  background-image: url(../images/icons/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  min-width: 44px;
+}
+
+.favorites-link {
+  background-image: url(../images/icons/icon-favorites.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  margin-right: 20px;
+  min-width: 44px;
+  position: relative;
+}
+
+.favorites-link::after {
+  content: "12";
+  font-size: 10px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #7db54f;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .button {
   font-family: inherit;
   font-size: 20px;
