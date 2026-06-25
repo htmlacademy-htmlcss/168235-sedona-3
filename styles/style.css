@@ -979,7 +979,6 @@ body {
 }
 
 .breadcrumbs {
-  position: relative;
   display: flex;
   margin: 0;
   padding: 0;
@@ -1013,10 +1012,16 @@ body {
   background-position: center calc(50% + 1px);
 }
 
+.breadcrumbs-item {
+  position: relative;
+}
+
+
 .breadcrumbs-item::after {
     content: "";
     position: absolute;
-    top: 10px;
+    top: -2px;
+    left: 24px;
     width: 8px;
     height: 20px;
     background-image: url(../images/icons/arrow-breadcrumbs.svg);
