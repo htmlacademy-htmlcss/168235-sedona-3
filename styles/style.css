@@ -117,6 +117,28 @@ body {
   text-align: center;
   padding: 20px 16px;
   text-transform: capitalize;
+  position: relative;
+}
+
+.navigation-menu .navigation-link::after {
+  content: '';
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
+  /* Изначально линия скрыта с помощью масштабирования по оси X */
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  /* Направление анимации */
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.navigation-link:hover::after {
+  /* При наведении линия плавно появляется */
+  transform: scaleX(1);
 }
 
 .search-link {
@@ -956,26 +978,50 @@ body {
 
 }
 
+.breadcrumbs {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #242424;
+  list-style-type: none;
+  align-items: center;
+  gap: 28px;
+}
 
-.breadcrumbs-link,
 .page-catalog button {
   color: #ffffff;
   text-decoration: none;
 }
-
-.breadcrumbs {
+.breadcrumbs-link {
+  display: flex;
+  row-gap: 10px;
+  font-family: inherit;
   font-size: 16px;
   line-height: 131%;
   font-weight: 400;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.breadcrumbs-item {
-  margin: 0;
-  padding: 0;
+.breadcrumbs-link-home {
+  display: block;
+  min-width: 13px;
+  height: 15px;
+  background-image: url(../images/icons/breadcrumbs-home.svg);
+  background-repeat: no-repeat;
+  background-position: center calc(50% + 1px);
+}
+
+.breadcrumbs-item::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 8px;
+    height: 20px;
+    background-image: url(../images/icons/arrow-breadcrumbs.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .filter-section {
