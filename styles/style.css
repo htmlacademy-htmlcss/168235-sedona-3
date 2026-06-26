@@ -1301,20 +1301,35 @@ body {
 }
 
 .stars {
-  min-width: 24px;
-  background-image: url(../images/icons/star.svg);
-  background-repeat: repeat-x;
-  background-size: 24px 24px;
-  background-position: 0 50%;
-  grid-column: 1/ 2;
+  position: relative;
+  width: 140px; /* Общая ширина блока */
+  height: 18px; /* Высота равна размеру звездочки */
 }
 
-.stars-4 {
-  width: calc(24px*4)
+.stars::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 100%;
+  background: url(../images/icons/star.svg) repeat-x;
+  background-size: 24px 18px; /* Размер одной звезды */
+  background-position: 0 0;
 }
 
-.stars-2 {
-  width: calc(24px*2)
+/* Рейтинг 2 звезды */
+.stars.stars-2::after {
+  width: calc((24px) * 2);
+}
+
+/* Рейтинг 3 звезды */
+.stars.stars-3::after {
+  width: calc((24px) * 3);
+}
+
+/* Рейтинг 4 звезды */
+.stars.stars-4::after {
+  width: calc((24px) * 4);
 }
 
 .card-rating {
