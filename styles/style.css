@@ -835,14 +835,12 @@ body {
 }
 
 .filter-title {
+  margin: 0;
+  padding: 0;
   font-size: 20px;
   font-weight: 700;
   line-height: 120%;
   text-transform: capitalize;
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 288px;
-  padding: 0;
 }
 
 .sorting-title {
@@ -978,7 +976,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto min-content;
   grid-auto-rows: auto;
-  row-gap: 56px;
+  row-gap: 46px;
   border: none;
   flex-basis: 288px;
   margin: 0;
