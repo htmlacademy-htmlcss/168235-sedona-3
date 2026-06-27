@@ -315,8 +315,7 @@ body {
 
 .promo-headline
 {
-    margin: 0;
-    margin-bottom: 25px;
+    margin: 0 0 25px;
     padding: 0;
     font-size: 30px;
     font-family: inherit;
@@ -375,8 +374,7 @@ body {
 
 .promo-text,
 .recomendation-text {
-    margin: 0;
-    margin-bottom: 54px;
+    margin: 0 0 54px;
     padding: 0;
     font-size: 22px;
     font-family: inherit;
@@ -515,8 +513,27 @@ body {
 
 .recomendation-item {
     width: 400px;
-    padding: 80px 85px;
+    padding: 183px 85px
+    80px;
     text-align: center;
+}
+
+.housing-item {
+  background-image: url(../images/icons/house.svg);
+  background-position: left 50% top 81px;
+  background-repeat: no-repeat;
+}
+
+.food-item {
+  background-image: url(../images/icons/food.svg);
+  background-position: left 50% top 81px;
+  background-repeat: no-repeat;
+}
+
+.souvenir-item {
+  background-image: url(../images/icons/souvenir.svg);
+  background-position: left 50% top 81px;
+  background-repeat: no-repeat;
 }
 
 .recomendation-item:nth-child(odd) {
@@ -557,8 +574,7 @@ body {
 
 .subscribe-text {
     max-width: 475px;
-    margin: 0 auto;
-    margin-bottom: 54px;
+    margin: 0 auto 54px;
     padding: 0;
     font-size: 22px;
     font-family: inherit;
