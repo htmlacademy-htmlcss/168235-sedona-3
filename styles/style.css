@@ -432,11 +432,6 @@ body {
   list-style: none;
 }
 
-.advantages p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 118%;
-}
 
 .advantages-item {
   display: block;
