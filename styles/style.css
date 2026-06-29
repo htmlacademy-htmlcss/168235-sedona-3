@@ -977,7 +977,6 @@ body {
 }
 
 .filter-price {
-    /* display: flex; */;
     display: grid;
     align-items: flex-start;
     row-gap: 46px;
