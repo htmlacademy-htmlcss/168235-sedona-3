@@ -372,6 +372,7 @@ body {
 
 .promo-text,
 .recomendation-text {
+  margin: 0;
   padding: 0;
   font-size: 22px;
   font-family: inherit;
@@ -380,15 +381,6 @@ body {
   color: #333;
   text-align: center;
 }
-
-.promo-text {
-  margin: 0;
-}
-
-.recomendation-text {
-  margin: 0;
-}
-
 
 .advantages-header {
   padding: 69px 270px 90px;
