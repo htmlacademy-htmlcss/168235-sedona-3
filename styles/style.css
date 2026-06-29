@@ -381,7 +381,7 @@ body {
 }
 
 .promo-text {
-  margin: 0 0 54px;
+  margin: 0;
 }
 
 .recomendation-text {
@@ -551,6 +551,10 @@ body {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
+}
+
+.offer-text {
+  margin: 0 0 54px;
 }
 
 .subscribe {
