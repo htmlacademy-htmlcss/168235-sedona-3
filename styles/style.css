@@ -563,6 +563,8 @@ body {
 }
 
 .offer-text {
+  font-size: 22px;
+  line-height: 118%;
   margin: 0 0 54px;
   padding: 0;
 }
