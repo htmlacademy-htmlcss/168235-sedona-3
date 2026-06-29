@@ -522,7 +522,7 @@ body {
   text-align: center;
 }
 
-.recomendation-item:before {
+.recomendation-item::before {
   content: "";
   display: block;
   width: 75px;
@@ -532,6 +532,19 @@ body {
   background-position: center;
   background-size: 75px 72px;
 }
+
+.housing-item::before {
+  background-image: url(../images/icons/house.svg);
+}
+
+.food-item::before {
+  background-image: url(../images/icons/food.svg);
+}
+
+.souvenir-item::before {
+  background-image: url(../images/icons/souvenir.svg);
+}
+
 
 .recomendation-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
@@ -555,6 +568,7 @@ body {
 
 .offer-text {
   margin: 0 0 54px;
+  padding: 0;
 }
 
 .subscribe {
