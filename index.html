@@ -286,12 +286,12 @@
 
             <label for="check-in-date" class="modal-label">Дата заезда:</label>
             <div class="field-group">
-              <input type="text" id="check-in-date" value="" placeholder="Укажите дату" class="field check-in-date">
+              <input type="text" id="check-in-date" value="27 апреля 2020" placeholder="Укажите дату" class="field check-in-date">
               <p class="modal-input-info input-info-error">Мы не можем отправить вас в прошлое.</p>
             </div>
             <label for="departure-date" class="modal-label">Дата выезда:</label>
             <div class="field-group">
-              <input type="text" id="departure-date" value="" placeholder="Укажите дату" class="field departure-date">
+              <input type="text" id="departure-date" value="1 сентября 2023" placeholder="Укажите дату" class="field departure-date">
               <p class="modal-input-info">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <label for="adults" class="modal-label label-adults">Взрослые:</label>
@@ -302,7 +302,7 @@
                     <path d="M3 9V11H17V9H3Z" fill="black" />
                   </svg>
                 </button>
-                <input class="field-number" type="number" id="adults" value="" min="1" max="100" placeholder="20">
+                <input class="field-number" type="number" id="adults" value="2" min="1" max="100" placeholder="2">
                 <button class="button-input plus">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="black" />
@@ -310,16 +310,14 @@
                 </button>
               </div>
             </div>
-            <span class="form-label">
+            <span class="form-label-wrapper">
               <label for="children" class="form-label modal-label label-children">Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button">
-                  <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white" />
-                  </svg>
-
                 </button>
-                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                <span class="tooltip-text">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
               </span>
             </span>
             <div class="field-group-children">
@@ -329,7 +327,7 @@
                     <path d="M3 9V11H17V9H3Z" fill="black" />
                   </svg>
                 </button>
-                <input class="field-number" type="number" id="children" value="" min="0" max="100" placeholder="2">
+                <input class="field-number" type="number" id="children" value="2" min="0" max="100" placeholder="2">
                 <button class="button-input plus">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="black" />

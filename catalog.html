@@ -81,20 +81,23 @@
                 <legend class="filter-title">Инфраструктура:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <label class="catalog-checked">
-                      <input class="filter-input" type="checkbox" name="infrastructure" checked value="pool">
+                    <label class="catalog-checked" for="pool">
+                      <input class="filter-input visually-hidden" type="checkbox" name="infrastructure" id="pool" checked value="pool">
+                      <span class="control-mark-check"></span>
                       <span class="filter-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="catalog-checked">
-                      <input class="filter-input" type="checkbox" name="infrastructure" value="parking">
+                    <label class="catalog-checked" for="parking">
+                      <input class="filter-input visually-hidden" type="checkbox" name="infrastructure" id="parking" value="parking">
+                      <span class="control-mark-check"></span>
                       <span class="filter-label">Парковка</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="catalog-check">
-                      <input class="filter-input" type="checkbox" name="infrastructure" value="wifi">
+                    <label class="catalog-checked" for="wifi">
+                      <input class="filter-input visually-hidden" type="checkbox" name="infrastructure" id="wifi" value="wifi">
+                      <span class="control-mark-check"></span>
                       <span class="filter-label">Wi-Fi</span>
                     </label>
                   </li>
@@ -105,21 +108,24 @@
                 <legend class="filter-title">Тип жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <label class="catalog-radio">
-                      <input class="filter-input" id="hotel-radio" name="type-radio" type="radio" checked value="Hotel">
+                    <label class="catalog-radio" for="hotel-radio">
+                      <input class="filter-input visually-hidden" id="hotel-radio" name="type-radio" type="radio" checked value="Hotel">
+                      <span class="control-mark-radio"></span>
                       <span class="filter-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="catalog-radio">
-                      <input class="filter-input" id="motel-radio" name="type-radio" type="radio" value="Motel">
+                    <label class="catalog-radio" for="motel-radio">
+                      <input class="filter-input visually-hidden" id="motel-radio" name="type-radio" type="radio" value="Motel">
+                      <span class="control-mark-radio"></span>
                       <span class="filter-label">Мотель</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="catalog-radio">
-                      <input class="filter-input" id="apartments-radio" name="type-radio" type="radio"
+                    <label class="catalog-radio" for="apartments-radio">
+                      <input class="filter-input visually-hidden" id="apartments-radio" name="type-radio" type="radio"
                         value="Apartments">
+                      <span class="control-mark-radio"></span>
                       <span class="filter-label">Апартаменты</span>
                     </label>
                   </li>
