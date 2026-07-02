@@ -13,8 +13,7 @@
 
   <body>
     <div class="page-container">
-
-
+      <!-- Меню навигации -->
       <header class="page-header" data-test="header">
         <a href="index.html" class="logo-link" aria-current="page">
           <img src="images/icons/logo.svg" width="140" height="70" alt="Логотип Седоны" class="logo-site">
@@ -63,7 +62,7 @@
       </header>
 
       <main class="main-index" data-test="main">
-
+        <!-- Приветствие на главной странице -->
         <section class="promo" data-test="hero">
           <h1 class="visually-hidden">
             Добро пожаловать в Седону
@@ -72,7 +71,7 @@
             alt="Welcome to the Gorgeous Sedona Becose the Grand Canyon sucks" width="458" height="352">
 
         </section>
-
+        <!-- Преимущества Седоны -->
         <section class="advantages" data-test="advantages">
           <div class="advantages-header">
             <h2 class="promo-headline">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -135,7 +134,7 @@
             </li>
           </ul>
         </section>
-
+        <!-- Рекомендации по отдыху в Седоне -->
         <section class="recomendation">
           <div class="recomendation-header">
             <h2 class="recomendation-headline">
@@ -165,6 +164,7 @@
           </ul>
 
         </section>
+        <!-- Поиск гостиницы в Седоне -->
         <section class="offer" data-test="search">
           <h2 class="offer-headline">Заинтересовались?</h2>
           <p class="offer-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
@@ -172,7 +172,7 @@
           <a href="#" class="link-search-hotel">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </section>
 
-
+        <!-- Подписка на рассылку -->
         <section class="subscribe subscribe-index" data-test="subscribe">
           <h2 class="subscribe-title subscribe-title-index">
             Подпишитесь на рассылку
@@ -186,7 +186,7 @@
         </section>
 
       </main>
-
+      <!-- Футер -->
       <footer class="page-footer" data-test="footer">
         <section class="footer-social">
           <h3 class="visually-hidden">Ссылки на соцсети</h3>
@@ -266,9 +266,82 @@
           </svg>
         </a>
 
-
-
       </footer>
+
+    </div>
+    <!-- Модальное окно поиска гостиницы в Седоне -->
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-booking">
+        <button class="modal-close-button">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17 4.29231L15.7077 3L10 8.70769L4.29231 3L3 4.29231L8.70769 10L3 15.7077L4.29231 17L10 11.2923L15.7077 17L17 15.7077L11.2923 10L17 4.29231Z"
+              fill="black" />
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+
+            <label for="check-in-date" class="modal-label">Дата заезда:</label>
+            <div class="field-group">
+              <input type="text" id="check-in-date" value="" placeholder="Укажите дату" class="field check-in-date">
+              <p class="modal-input-info input-info-error">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <label for="departure-date" class="modal-label">Дата выезда:</label>
+            <div class="field-group">
+              <input type="text" id="departure-date" value="" placeholder="Укажите дату" class="field departure-date">
+              <p class="modal-input-info">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <label for="adults" class="modal-label label-adults">Взрослые:</label>
+            <div class="field-group-adults">
+              <div class="number-input">
+                <button class="button-input minus">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="black" />
+                  </svg>
+                </button>
+                <input class="field-number" type="number" id="adults" value="" min="1" max="100" placeholder="20">
+                <button class="button-input plus">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="black" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <span class="form-label">
+              <label for="children" class="form-label modal-label label-children">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white" />
+                  </svg>
+
+                </button>
+                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
+            <div class="field-group-children">
+              <div class="number-input">
+                <button class="button-input minus">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="black" />
+                  </svg>
+                </button>
+                <input class="field-number" type="number" id="children" value="" min="0" max="100" placeholder="2">
+                <button class="button-input plus">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="black" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button type="submit" class="modal-button">Найти</button>
+
+          </form>
+        </section>
+      </div>
 
     </div>
 
