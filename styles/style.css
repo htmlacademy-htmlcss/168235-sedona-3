@@ -426,7 +426,6 @@ body {
     list-style: none;
 }
 
-
 .advantages-item {
     display: block;
     width: 400px;
@@ -611,7 +610,7 @@ body {
     color: #000000;
 }
 
-/* .subscribe-input:not(:placeholder-shown):invalid {
+ .subscribe-input:not(:placeholder-shown):invalid {
     color: #ff0000;
 }
 .subscribe-button {
@@ -655,12 +654,10 @@ body {
     padding: 45px 70px 35px;
 }
 
-
 .footer-social {
     display: flex;
     margin: 0;
 }
-
 
 .footer-social-list {
     display: flex;
@@ -743,8 +740,6 @@ body {
     fill: #756157;
     opacity: 0.3;
 }
-
-
 
 .visually-hidden {
     position: absolute;
