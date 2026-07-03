@@ -28,7 +28,6 @@ html {
 img {
     object-fit: contain;
     max-width: 100%;
-    height: auto;
 }
 
 body {
@@ -65,7 +64,7 @@ body {
 .page-header {
     display: flex;
     flex-wrap: wrap;
-    gap: 28px;
+    gap: 29px;
     margin: 0 70px;
     padding: 0;
 }
@@ -431,15 +430,19 @@ body {
     display: block;
     width: 400px;
     min-height: 385px;
-    padding: 103px 85px;
+    padding: 112.5px 85px;
     text-align: center;
+}
+
+.advantages-item-image {
 }
 
 .advantages-item-text {
     display: block;
     align-items: stretch;
     width: 400px;
-    padding: 102px 84px 10px;
+    padding: 102px 85px 101px;
+    height: fit-content;
 }
 
 .advantages-item-image {
@@ -447,10 +450,6 @@ body {
     width: 100%;
     padding: 0;
     background-color: #82B3D3;
-}
-
-.advantages-item-text {
-    width: 400px;
 }
 
 .small-hr {
@@ -573,7 +572,7 @@ body {
     background-color: #756157;
     background-image: url(../images/subscribe.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    /* background-position: center center; */
     background-size: cover;
     color: #ffffff;
 }
@@ -811,6 +810,7 @@ body {
 
 .breadcrumbs-item {
     display: flex;
+    min-height: 21px;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
@@ -1009,6 +1009,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 .catalog-checked:hover {
@@ -1065,6 +1066,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 .catalog-radio:hover {
