@@ -65,8 +65,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 29px;
-  margin: 0 70px;
-  padding: 0;
+  padding: 0 70px;
+  margin: 0;
 }
 
 .logo-link {
@@ -318,8 +318,8 @@ body {
 }
 
 .promo-headline {
-  margin: 0 0 25px;
-  padding: 0;
+  margin: 0;
+  padding: 0 0 25px;
   font-size: 30px;
   font-family: inherit;
   font-weight: 700;
@@ -383,8 +383,12 @@ body {
   text-align: center;
 }
 
+.advantages {
+  padding: 70px 0 0;
+}
+
 .advantages-header {
-  padding: 69px 270px 90px;
+  padding: 0 270px 90px;
   text-align: center;
 }
 
@@ -527,7 +531,7 @@ body {
 }
 
 .souvenir-item::before {
-  background-image: url(../images/icons/souvenir.svg);
+  background-image: url(../images/icons/souvenir2.svg);
 }
 
 
@@ -1904,7 +1908,7 @@ body {
 
 .tooltip-text {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
-  display: block;
+  display: none;
   position: absolute;
   z-index: 1;
   left: 49%;
