@@ -1610,12 +1610,12 @@ body {
   width: 717px;
 }
 
-.modal-close-button {
+.modal-button-close {
   position: absolute;
-  top: 64px;
-  right: 53px;
-  width: 53px;
-  height: 53px;
+  top: 65px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
   padding: 0;
   background-color: #f2f2f2;
   cursor: pointer;
@@ -1623,26 +1623,42 @@ body {
   border-radius: 50%;
 }
 
-.modal-close-button svg {
+/* Общие стили для линий крестика */
+.modal-button-close::before,
+.modal-button-close::after {
+  content: '';
+  position: absolute;
+   /* Центрируем линии строго посередине кнопки */
+  top: 50%;
+  left: 50%;
   width: 20px;
-  height: 20px;
-  margin: auto;
+  height: 2px;
+  background-color: #000;
+  /* Смещаем центр трансформации в центр самой линии для точного поворота */
+  transform: translate(-50%, -50%) rotate(45deg);
+  /* Добавляем плавный переход для изменения прозрачности */
+  transition: opacity 0.2s ease;
 }
 
-.modal-close-button:hover {
+.modal-button-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal-button-close:hover {
   background-color: #e5e5e5;
 }
 
-.modal-close-button:focus-visible {
+.modal-button-close:focus-visible {
   outline: 3px solid #83B3D3;
   background-color: #e5e5e5;
 }
 
-.modal-close-button:active {
+.modal-button-close:active {
   background-color: #e5e5e5;
 }
 
-.modal-close-button:active svg path {
+.modal-button-close:active::after,
+.modal-button-close:active::before {
   opacity: 0.3;
 }
 
@@ -1738,7 +1754,7 @@ body {
   align-items: center;
   overflow: hidden;
   width: 110px;
-  padding: 0 10px;
+  padding: 0 7px;
   background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
@@ -1822,6 +1838,7 @@ body {
 .label-children {
   grid-column: 3 / 4;
   margin-left: auto;
+  padding-right: 2px;
 }
 
 .field-group-children {
@@ -1880,20 +1897,20 @@ body {
   background-image: url(../images/icons/tooltip.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20px 20px;
+  background-size: 26px 26px;
   border: none;
   border-radius: 50%;
 }
 
 .tooltip-text {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
-  display: none;
+  display: block;
   position: absolute;
   z-index: 1;
-  left: 50%;
+  left: 49%;
   transform: translateY(15px) translateX(-50%);
   width: 256px;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 22px 21px;
   background-color: #333;
   border-radius: 10px;
   font-size: 16px;
@@ -1905,7 +1922,7 @@ body {
 
 .tooltip-text::before {
   content: "";
-  display: none;
+  display: block;
   position: absolute;
   top: -9px;
   left: 50%;
