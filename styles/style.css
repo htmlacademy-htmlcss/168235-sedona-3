@@ -1778,30 +1778,28 @@ body {
   border: 3px solid transparent;
   border-radius: 4px;
   font-size: 18px;
+  color: #756157;
+  opacity: 0.3;
+  transition: color 0.3s ease; /* Плавный переход */
+}
+
+.button-input:hover,
+.button-input:focus-visible {
+  color: #000;
+  opacity: 1;
+}
+
+.button-input:focus-visible {
+  outline: 3px solid #83B3D3;
+  opacity: 1;
 }
 
 .button-input svg {
   border-radius: 4px;
 }
 
-.button-input svg path {
-  fill: #756157;
-  opacity: 0.3;
-}
-
-.button-input:hover svg path,
-.button-input:focus-visible svg path {
-  fill: #000000;
-  opacity: 1;
-}
-
-.button-input:focus-visible svg {
-  outline: 3px solid #83B3D3;
-  opacity: 1;
-}
-
-.button-input:active svg path {
-  fill: #000000;
+.button-input:active {
+  color: #000000;
   opacity: 0.2;
 }
 
