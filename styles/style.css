@@ -1789,7 +1789,7 @@ body {
   opacity: 1;
 }
 
-.button-input:focus-visible {
+.button-input:focus-visible svg {
   outline: 3px solid #83B3D3;
   opacity: 1;
 }
