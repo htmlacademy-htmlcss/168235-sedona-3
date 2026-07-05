@@ -1360,7 +1360,7 @@ body {
   display: grid;
   justify-content: space-between;
   gap: 16px 20px;
-  grid-template-rows: 212px 28px 21px 36px 37px;
+  grid-template-rows: 212px 1fr 21px 36px 37px;
   grid-template-columns: 1fr 1fr;
   width: 340px;
   padding: 19px;
