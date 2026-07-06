@@ -75,6 +75,14 @@ body {
   min-width: 140px;
 }
 
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:active {
+  opacity: 0.3;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
