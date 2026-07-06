@@ -150,8 +150,12 @@
 
                 <div class="filter-range">
                   <div class="filter-range-active-line">
-                    <button class="filter-range-from" type="button"></button>
-                    <button class="filter-range-to" type="button"></button>
+                    <button class="filter-range-from" type="button">
+                      <span class="visually-hidden">кнопка изменения минимальной стоимости</span>
+                    </button>
+                    <button class="filter-range-to" type="button">
+                      <span class="visually-hidden">Кнопк изменения максимальной стоимости</span>
+                    </button>
                   </div>
                 </div>
 
@@ -301,7 +305,8 @@
           </h2>
           <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-input" name="email" type="email" placeholder="Ваш e-mail" required>
+            <label class="visually-hidden" for="subscribe-email">Укажите email для подписки</label>
+            <input class="subscribe-input" name="user-email" type="email" placeholder="Ваш e-mail" required>
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>

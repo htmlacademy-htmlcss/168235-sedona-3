@@ -76,9 +76,7 @@
           <div class="advantages-header">
             <h2 class="promo-headline">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="promo-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-
           </div>
-
 
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-image">
@@ -87,7 +85,8 @@
                 <hr class="small-hr">
                 <p class="text-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages-image" src="images/true-city.jpg" alt="фото гостиницы в городе на фоне гор" width="800" height="385">
+              <img class="advantages-image" src="images/true-city.jpg" alt="фото гостиницы в городе на фоне гор"
+                width="800" height="385">
             </li>
             <li class="advantages-item">
               <h3 class="advatages-title">
@@ -177,7 +176,8 @@
           <p class="subscribe-text subscribe-text-index">Только полезная информация и никакого спама, честное
             бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-input" name="email" type="email" placeholder="Ваш e-mail" required>
+            <label class="visually-hidden" for="subscribe-email">Укажите email для подписки</label>
+            <input class="subscribe-input" name="user-email" type="email" placeholder="Ваш e-mail" id="subscribe-email" required>
             <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -268,14 +268,9 @@
     </div>
     <!-- Модальное окно поиска гостиницы в Седоне -->
     <div class="modal-container modal-container-close">
-      <div class="modal modal-booking">
-        <button class="modal-close-button">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M17 4.29231L15.7077 3L10 8.70769L4.29231 3L3 4.29231L8.70769 10L3 15.7077L4.29231 17L10 11.2923L15.7077 17L17 15.7077L11.2923 10L17 4.29231Z"
-              fill="black"></path>
-          </svg>
-          <span class="visually-hidden">Закрыть окно</span>
+      <div class="modal modal-booking" data-test="modal">
+        <button class="modal-button-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -283,26 +278,26 @@
 
             <label class="modal-label" for="check-in-date">Дата заезда:</label>
             <div class="field-group">
-              <input class="field check-in-date" id="check-in-date" type="text" value="27 апреля 2020"
-                placeholder="Укажите дату">
+              <input class="field check-in-date" id="check-in-date" name="check-in-date" type="text"
+                value="27 апреля 2020" placeholder="Укажите дату" required>
               <p class="modal-input-info input-info-error">Мы не можем отправить вас в прошлое.</p>
             </div>
             <label class="modal-label" for="departure-date">Дата выезда:</label>
             <div class="field-group">
-              <input class="field departure-date" id="departure-date" type="text" value="1 сентября 2023"
-                placeholder="Укажите дату">
+              <input class="field departure-date" id="departure-date" name="departure-date" type="text"
+                value="1 сентября 2023" placeholder="Укажите дату" required>
               <p class="modal-input-info">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <label class="modal-label label-adults" for="adults">Взрослые:</label>
             <div class="field-group-adults">
               <div class="number-input">
-                <button class="button-input minus">
+                <button class="button-input minus" type="button">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9V11H17V9H3Z" fill="currentColor"></path>
                   </svg>
                 </button>
                 <input class="field-number" id="adults" type="number" value="2" min="1" max="100" placeholder="2">
-                <button class="button-input plus">
+                <button class="button-input plus" type="button">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"></path>
                   </svg>
@@ -322,13 +317,13 @@
             </span>
             <div class="field-group-children">
               <div class="number-input">
-                <button class="button-input minus">
+                <button class="button-input minus" type="button">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9V11H17V9H3Z" fill="currentColor"></path>
                   </svg>
                 </button>
                 <input class="field-number" id="children" type="number" value="2" min="0" max="100" placeholder="2">
-                <button class="button-input plus">
+                <button class="button-input plus" type="button">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"></path>
                   </svg>

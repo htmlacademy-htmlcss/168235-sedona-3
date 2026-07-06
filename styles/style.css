@@ -63,7 +63,6 @@ body {
 
 .page-header {
   display: flex;
-  flex-wrap: wrap;
   gap: 29px;
   padding: 0 70px;
   margin: 0;
@@ -73,11 +72,19 @@ body {
   display: block;
   z-index: 0;
   margin-bottom: -10px;
+  min-width: 140px;
+}
+
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:active {
+  opacity: 0.3;
 }
 
 .navigation {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   flex-grow: 1;
   height: fit-content;
@@ -139,6 +146,10 @@ body {
   transform: scaleX(1);
 }
 
+.navigation-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .navigation-user .navigation-link::before {
   transform-origin: bottom left;
   content: '';
@@ -157,6 +168,7 @@ body {
 }
 
 .search-link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,7 +180,32 @@ body {
   background-size: 20px 20px;
 }
 
+.search-link::before,
+.favorites-link::before {
+  transform-origin: bottom left;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  transform: scaleX(0);
+  height: 2px;
+  transition: transform 0.3s ease;
+  background-color: #756257;
+}
+
+.search-link:hover::before,
+.favorites-link:hover::before {
+  transform: scaleX(1);
+}
+
+.search-link:active,
+.favorites-link:active {
+  opacity: 0.3;
+}
+
 .favorites-link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,6 +248,7 @@ body {
   justify-content: center;
   align-items: center;
   width: fit-content;
+  max-width: 160px;
   height: fit-content;
   min-height: 36px;
   margin: 0 auto;
@@ -990,6 +1028,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 150px;
 }
 
 .filter-checkbox {
@@ -1024,6 +1063,7 @@ body {
   display: block;
   position: relative;
   width: 20px;
+  min-width: 20px;
   height: 20px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -1079,6 +1119,7 @@ body {
   display: block;
   position: relative;
   width: 20px;
+  min-width: 20px;
   height: 20px;
   background-color: #ffffff;
   border-radius: 50%;
@@ -1117,6 +1158,12 @@ body {
   width: 20px;
   margin: 0;
   border-radius: 4px;
+}
+
+.filter-label {
+  overflow-wrap: break-word;
+  /* Разрешаем элементу сжиматься меньше размера его контента */
+  min-width: 0;
 }
 
 .filter-input:hover,
@@ -1820,13 +1867,13 @@ body {
 }
 
 /* Скрываем стандартные стрелки для type="number" */
-.number-input input::-webkit-outer-spin-button,
-.number-input input::-webkit-inner-spin-button {
+.field-number::-webkit-outer-spin-button,
+.field-number::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.number-input {
+.field-number {
   -moz-appearance: textfield;
 }
 
